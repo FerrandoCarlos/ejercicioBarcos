@@ -17,7 +17,7 @@ public class Velero extends Barco {
     }
 
     @Override
-    public int calculoModulo() {
+    public double calculoModulo() {
         return super.calculoModulo() + nroMastiles;
     }
 }

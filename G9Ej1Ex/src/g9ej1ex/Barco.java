@@ -6,14 +6,14 @@ package g9ej1ex;
  */
 public class Barco {
     private String matricula;
-    private int eslora;
+    private double eslora;
     private int anioFabricacion;
     
     //Constructores
     public Barco() {
     }
 
-    public Barco(String matricula, int eslora, int anioFabricacion) {
+    public Barco(String matricula, double eslora, int anioFabricacion) {
         this.matricula = matricula;
         this.eslora = eslora;
         this.anioFabricacion = anioFabricacion;
@@ -21,15 +21,15 @@ public class Barco {
     
     //Getters & Setters
 
-    public int getEslora() {
+    public double getEslora() {
         return eslora;
     }
 
-    public void setEslora(int eslora) {
+    public void setEslora(double eslora) {
         this.eslora = eslora;
     }
     
-    public int calculoModulo(){
+    public double calculoModulo(){
         return eslora * 10;
     }
 }
